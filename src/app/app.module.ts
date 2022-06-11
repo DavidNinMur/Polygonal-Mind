@@ -9,6 +9,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { WelcomeSelectionComponent } from './welcome-selection/welcome-selection.component';
 import { FooterComponent } from './footer/footer.component';
 import { WidgetConnectComponent } from './widget-connect/widget-connect.component';
+import { RandomNftComponent } from './random-nft/random-nft.component';
+import { ComponentNftComponent } from './component-nft/component-nft.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,24 @@ import { WidgetConnectComponent } from './widget-connect/widget-connect.componen
     WelcomeSelectionComponent,
     FooterComponent,
     WidgetConnectComponent,
+    RandomNftComponent,
+    ComponentNftComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, NavbarComponent, ImageSliderComponent]
+  bootstrap: [
+    AppComponent,
+    NavbarComponent,
+    ImageSliderComponent,
+    JumbotronComponent,
+    WelcomeSelectionComponent,
+    FooterComponent,
+    WidgetConnectComponent,
+    RandomNftComponent,
+    ComponentNftComponent
+  ]
 })
 export class AppModule { }
