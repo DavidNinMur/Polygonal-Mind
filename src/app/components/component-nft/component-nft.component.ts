@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-component-nft',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-nft.component.css']
 })
 export class ComponentNftComponent implements OnInit {
+
+  @Input() dataNftList: Array<any> = [];
 
   constructor() { }
 

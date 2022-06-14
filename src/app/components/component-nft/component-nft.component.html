@@ -7,39 +7,13 @@
   data-aos-duration="1000"
 >
   <div class="row padding">
-    <div class="col-md-4">
+    <div class="col-md-4" *ngFor="let nftObj of dataNftList">
       <div class="card">
-        <img class="card-img-top" src="../assets/img/team1.png" />
+        <img class="card-img-top" :src="{{ nftObj.imageUrl }}" />
         <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
+          <h4 class="card-title">{{ nftObj.nameStr }}</h4>
           <p class="card-text">
-            John is an Interent entrepreneur with almost 20 years of experience.
-          </p>
-          <a href="#" class="btn btn-outline-secondary">See Profile</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="../assets/img/team2.png" />
-        <div class="card-body">
-          <h4 class="card-title">Mary Jo</h4>
-          <p class="card-text">
-            Mary is a designer with a almost 10 years of digital design
-            experience.
-          </p>
-          <a href="#" class="btn btn-outline-secondary">See Profile</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="../assets/img/team3.png" />
-        <div class="card-body">
-          <h4 class="card-title">Phil Ho</h4>
-          <p class="card-text">
-            Phil is an developer with over 5 years of web development
-            experience.
+            {{ nftObj.descriptionStr }}
           </p>
           <a href="#" class="btn btn-outline-secondary">See Profile</a>
         </div>

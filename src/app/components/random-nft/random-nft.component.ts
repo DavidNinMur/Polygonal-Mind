@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-random-nft',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./random-nft.component.css']
 })
 export class RandomNftComponent implements OnInit {
+
+  @Input() nftImageParsedList: Array<any> = [];
 
   constructor() { }
 
